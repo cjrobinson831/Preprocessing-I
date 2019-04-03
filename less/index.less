@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -54,6 +54,65 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2{
+	font-color: orange;
+}
+
+.top-content{
+	background: gray;
+}
+
+.container {
+	width: 100%;
+	/* TB LR */
+	margin: 0 auto;
+	max-width: 880px;
+  }
+
+  @media(max-width:500px){
+	  .container{
+		  display: flex;
+		}
+		h1{
+			border: 2px solid black;
+		}
+  }
+
+  .vertical-line{
+		border-left: 2px thick solid #ff0000;
+  }
+
+  .skills-d{
+	  display: flex;
+	  border: 2px solid firebrick;
+  }
+
+  h2{
+	border-radius: 40px;
+	background: orange;
+  }
+
+  button{
+	  border-radius: 50px;
+	  padding: 10px;
+	  width: 100%;
+  }
+
+  img {
+	max-width: 100%;
+	height: auto;
+  }
