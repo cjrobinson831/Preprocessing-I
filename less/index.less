@@ -32,9 +32,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -54,6 +54,131 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	
+h1{
+	font: bold;
+	font-size: 30px;
+}
+}
+p{
+	margin: 10px;
+}
+
+h2{
+	font-color: orange;
+}
+
+.top-content{
+	background: gray;
+}
+
+.container {
+	width: 100%;
+	/* TB LR */
+	margin: 0 auto;
+	max-width: 880px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+  @media(max-width:500px){
+	  .container{
+		  display: flex;
+		}
+		h1{
+			border: 2px solid black;
+		}
+  }
+
+  .text-content p{
+	  font-size: 25px;
+	  line-height: 30px;
+  }
+
+  .centered(){
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+  }
+  .skills-d{
+	  display: flex;
+	  border: 2px solid firebrick;
+	  margin-bottom: 10px;
+	  justify-content: space-around;
+	  align-items: center;	
+	  width: 100%
+  }
+
+  .work-history{
+	  margin: 10px;
+  }
+
+  h2{
+	border-radius: 40px;
+	background: orange;
+	height: 30px;
+  }
+
+  @media(max-width:500px){
+	  head{
+		  justify-content: center;
+	  }
+	  header nav{
+		  width: 100%;
+		  flex-direction: column;
+		  margin: 0;
+		  padding: 0;
+	  }
+	  .container{
+		  width: 100%;
+		  display: block;
+		  padding: 20px 0;
+		  font-size: 20px;
+	  }
+
+  }
+
+
+  @media(max-width:500px){
+	  button{
+		border-radius: 50px;
+		padding: 10px;
+		width: 90%;
+		background: gray;
+		font-size: 20px;
+		justify-content: center;
+		justify-items: center;
+		margin-right: 10px;
+	  }
+  }
+  button{
+	  border-radius: 50px;
+	  padding: 10px;
+	  width: 100%;
+	  background: gray;
+	  font-size: 30px;
+	  cursor: pointer;
+	  margin: 10px 30px 20px;
+  }
+
+
+  img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  .text-content{
+	  margin: 10px;
+  }
